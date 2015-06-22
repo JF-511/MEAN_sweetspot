@@ -1,0 +1,475 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+$bg-color1 : #eeeaeb;
+$bg-color2 : #36485d;
+$text-color : #666666;
+$text-color1 : #c83026;
+$panel-color : #f2f3f5;
+
+
+.Merriweather-normal-400 {
+  font-family: 'Merriweather' !important;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.Merriweather-italic-400 {
+  font-family: 'Merriweather' !important;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.Lato-normal-100 {
+  font-family: 'Lato' !important;
+  font-style: normal;
+  font-weight: 100;
+}
+
+.Lato-normal-400 {
+  font-family: 'Lato' !important;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.Lato-normal-700 {
+  font-family: 'Lato' !important;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+  background:$bg-color1;
+  font-family : 'Lato';
+  color:$text-color;
+}
+
+
+
+/* Custom page header */
+.header {
+
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+
+  margin-bottom:30px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+.main{
+    width:1024px;
+    margin:0 auto;
+    padding:0 15px;
+}
+
+.header {
+  height:75px;
+  background:#fff;
+  border-bottom:1px solid #959595;
+  overflow:auto;
+}
+
+.menu {
+  width:485px;
+  height:50px;
+}
+
+.zipmenus {
+  width:500px;
+  margin:5px auto 60px auto;
+   > div {
+     width:250px;
+     height:50px;
+   }
+
+   .active {
+     -webkit-box-shadow: 0px 6px 5px -4px rgba(153,153,153,1);
+     -moz-box-shadow: 0px 6px 5px -4px rgba(153,153,153,1);
+     box-shadow: 0px 6px 5px -4px rgba(153,153,153,1);
+   }
+
+   .zip {
+     background : url(../images/zip2.png) no-repeat;
+   }
+
+   .zip.active {
+     background : url(../images/zip1.png) no-repeat;
+   }
+
+   .confirm {
+     background : url(../images/confirm2.png) no-repeat;
+     margin-left:-15px;
+   }
+
+   .confirm.active {
+     background : url(../images/confirm1.png) no-repeat;
+   }
+}
+
+#enterzip {
+  width:240px;
+
+  > div {
+    float:left;
+  }
+
+  border:1px solid #bfbebe;
+  border-radius : 4px;
+
+  padding:2px;
+}
+
+#enterzip:before {
+  border-left:100px;
+}
+
+#maps {
+  border:10px solid #fff;
+  width:460px;
+  height:300px;
+
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(153,153,153,1);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(153,153,153,1);
+  box-shadow: 0px 5px 10px 0px rgba(153,153,153,1);
+}
+
+
+.latomid {
+  font-style: normal;
+  font-weight: 300;
+  font-size:27px;
+}
+
+.zipcode {
+  margin-top:25px;
+}
+
+.radius {
+    margin:25px 0 15px 40px;
+    color:$text-color1;
+}
+
+.Lato-normal-900 {
+  font-family: 'Lato' !important;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.btncover {
+  background-image: -ms-linear-gradient(bottom, #e4e4e4 0%, #c5c7c9 100%);
+
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(bottom, #e4e4e4 0%, #c5c7c9 100%);
+
+  /* Opera */
+  background-image: -o-linear-gradient(bottom, #e4e4e4 0%, #c5c7c9 100%);
+
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e4e4e4), color-stop(1, #c5c7c9));
+
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(bottom, #e4e4e4 0%, #c5c7c9 100%);
+
+  /* W3C Markup, IE10 Release Preview */
+  background-image: linear-gradient(to top, #e4e4e4 0%, #c5c7c9 100%);
+
+  padding:8px;
+  border-radius : 26px;
+
+  .btn {
+    border-radius : 20px;
+    font-size:27px;
+  }
+
+  .nextstep {
+    background:$text-color1;
+    color:#fff;
+    padding:0 20px;
+  }
+}
+
+.r-slider {
+  margin-bottom:60px;
+}
+
+.slider.slider-horizontal {
+  width:100%;
+  background-image: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(225, 225, 225) 50%, rgb(225, 225, 225) 50%, rgb(225, 225, 225) 100%);
+  height:25px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(153,153,153,1);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(153,153,153,1);
+  box-shadow: 0px 5px 10px 0px rgba(153,153,153,1);
+}
+
+.slider-track {
+  background-image:none;
+  box-shadow:none;
+}
+
+.slider-selection {
+    background-image:none;
+    background: $text-color1;
+    box-shadow:none;
+}
+
+.slider-handle.round {
+  height:40px;
+  width:18px;
+  opacity:0.9;
+  background-image: -ms-linear-gradient(bottom, #e1e1e1 0%, #ffffff 100%);
+
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(bottom, #e1e1e1 0%, #ffffff 100%);
+
+  /* Opera */
+  background-image: -o-linear-gradient(bottom, #e1e1e1 0%, #ffffff 100%);
+
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e1e1e1), color-stop(1, #ffffff));
+
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(bottom, #e1e1e1 0%, #ffffff 100%);
+
+  /* W3C Markup, IE10 Release Preview */
+  background-image: linear-gradient(to top, #e1e1e1 0%, #ffffff 100%);
+  margin-top: -15px!important;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(153,153,153,1);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(153,153,153,1);
+  box-shadow: 0px 5px 10px 0px rgba(153,153,153,1);
+}
+
+.slider  {
+  .tooltip {
+    display:none;
+  }
+}
+/* Responsive: Portrait tablets and up */
+
+.toppart {
+  height:730px;
+
+  h1, h2, h4 {
+      margin-top:10px;
+      margin-bottom:10px;
+  }
+
+  h2 {
+    font-weight:bold;
+    color:$bg-color2;
+    font-size:28px;
+  }
+
+  h1 > label {
+    color:$text-color1;
+  }
+
+  h1.numbers {
+    color:$text-color1;
+    font-size:60px;
+  }
+
+  h4 {
+    color:$text-color;
+  }
+
+  .contents {
+    width:600px;
+    margin:0 auto;
+
+    p {
+      font-size:28px;
+    }
+
+    p.active {
+      color:$text-color1;
+    }
+  }
+
+  .zipmenus  {
+    margin:5px auto 40px auto;
+  }
+}
+
+.bottompart {
+  height:880px;
+  background:$bg-color2;
+
+  .main {
+    width:700px;
+
+    padding:0;
+    display:block;
+    position:relative;
+  }
+
+  .popup {
+      position:absolute;
+      top:-240px;
+      padding:0;
+      width:700px;
+
+      > div:nth-of-type(1) {
+        background:#fff;
+        width:100%;
+        padding:35px 40px 50px 40px;
+
+        -webkit-box-shadow: -1px 21px 30px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: -1px 21px 30px 0px rgba(0,0,0,0.75);
+        box-shadow: -1px 21px 30px 0px rgba(0,0,0,0.75);
+      }
+
+      > div.row {
+        margin:0 10px;
+      }
+  }
+
+
+
+   h3, h1 {
+     margin-top:10px;
+   }
+
+  .zip {
+    font-size:44px;
+    font-weight:bold;
+  }
+
+  .note {
+    margin:50px 0 50px 0;
+    font-size:18px;
+  }
+
+  p {
+    label {
+      border-bottom: 1px solid $text-color;
+      width: 100%;
+    }
+  }
+
+  .pan {
+    padding:5px;
+    background:$panel-color;
+    margin:10px auto 20px auto;
+  }
+
+  .pan1 {
+    width:70px;
+  }
+
+  .left-side p.Lato-normal-700 {
+    margin:10px 0 30px 0;
+  }
+
+  .btncover {
+    width:248px;
+    margin:100px auto;
+    background-image:none;
+    background:#293646;
+    border-radius : 35px;
+    .btn {
+      padding:5px 20px;
+      border-radius : 35px;
+    }
+  }
+}
+
+@media screen and (max-width : 1024px) {
+  .main {
+    width:100%;
+    min-width:480px;
+  }
+}
+
+@media screen and (max-width:980px) {
+  #maps {
+    margin:0 auto;
+    width:100%;
+  }
+
+    .main {
+      margin-top:30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+  .right-panel {
+    margin:0 auto;
+    width:480px;
+  }
+
+  #maps {
+    width:480px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+    .bottompart {
+      height:auto;
+      .main {
+        width:100%;
+      }
+
+      .popup {
+        width:100%;
+        position:relative;
+
+        > div:nth-of-type(1) {
+          padding:35px 10px;
+        }
+      }
+
+    }
+
+    .toppart .contents{
+      width:100%;
+    }
+}

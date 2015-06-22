@@ -1,0 +1,62 @@
+<div class="main">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 ">
+      <div class="zipmenus clearfix">
+          <div class="zip active pull-left">
+          </div>
+          <div class="confirm pull-left">
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <form id="form" name="form" ng-submit="nextpage()" role="form" name="form" novalidate>
+    <div class="col-sm-6 col-md-6">
+
+      <div id="maps"  location-Picker="locationPicker"></div>
+    </div>
+    <div class="col-sm-6 col-md-6">
+      <div class="right-panel">
+        <div class="row">
+          <div class="form-group  col-md-6">
+              <input  type="text" class="zipcode latomid text-center"
+                               placeholder="Enter Zip Code Here" ng-model="data.zip" required>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class=" col-md-8">
+            <div class="radius">
+                <span class="latomid">{{locationPicker.radius}} Mile Radius</span>
+            </div>
+            <div class="form-group r-slider">
+              <slider           width="100%"
+
+              slider-id="radius-slider"
+                                                  value="300"
+                                                  min="100"
+                                                  max="3000"
+                                                  step="10"  name="radius-slider" ng-model="locationPicker.radius" > </slider>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-8">
+            <div class="form-group ">
+                  <div class="btncover pull-right">
+                    <input type="submit"  class="btn nextstep Lato-normal-900" value="Next Step">
+                  </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </form>
+  </div>
+</div>
